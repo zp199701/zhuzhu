@@ -1,8 +1,3 @@
-- name: Set up Python 3.9
-  uses: actions/setup-python@v2
-  with:
-    python-version: '3.9'
-     
 import random
 from time import localtime
 from requests import get, post
