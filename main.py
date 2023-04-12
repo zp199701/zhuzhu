@@ -1,3 +1,8 @@
+- name: Set up Python 3.9
+  uses: actions/setup-python@v2
+  with:
+    python-version: '3.9'
+     
 import random
 from time import localtime
 from requests import get, post
@@ -5,7 +10,7 @@ from datetime import datetime, date
 from zhdate import ZhDate
 import sys
 import os
- 
+
  
 def get_color():
     # 获取随机颜色
