@@ -256,7 +256,7 @@ if __name__ == "__main__":
     note_en = config["note_en"]
     if note_ch == "" and note_en == "":
         # 获取词霸每日金句
-        note_ch, note_en = get_tuwei()
+        note_ch, note_en = get_tuwei1()
     # 公众号推送消息
     for user in users:
         send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
