@@ -259,6 +259,5 @@ if __name__ == "__main__":
         note_ch, note_en = get_tuwei()
     # 公众号推送消息
     for user in users:
-        print(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
-        send_message(user1, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
+        send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
     os.system("pause")
